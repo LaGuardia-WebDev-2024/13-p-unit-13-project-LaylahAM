@@ -1,13 +1,13 @@
 <!-- Unit 13 Project
 Requirements
-[  ] Two Interactive Drop-down Inputs 
-[  ] Two Different jQuery Animation Methods 
-[  ] Add Five CSS Declarations
+[ 1/2 ] Two Interactive Drop-down Inputs 
+[  1/2] Two Different jQuery Animation Methods 
+[ yes ] Add Five CSS Declarations
 [  ] Include Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Google Font
-[ no ] Feature 2 - Upload a Font
+[ yes ] Feature 2 - Upload a Font
 [ no ] Feature 3 - .mouseover() Method
 [ no ] Feature 4 - :hover Feature 
 [ no ] Feature 5 - Add an Additional Interactive Drop-down
@@ -28,10 +28,12 @@ Select ONE Additional Feature to Add
       <label>
         🎥 What is my favorite movie?
         <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+          <option value="10 things i hate about you">
+            10 things i hate about you
+          </option>
+          <option value="Lisa Frankenstein">Lisa Frankenstein</option>
+          <option value="Phantom of the Opera">Phantom of the Opera</option>
+          <option value="none">none</option>
         </select>
       </label>
       <button type="submit">Check Movie Answer</button>
@@ -43,10 +45,10 @@ Select ONE Additional Feature to Add
       <label>
         📖 What is my favorite book?
         <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+          <option value="none">none</option>
+          <option value="diary of a wimpy kid">diary of a wimpy kid</option>
+          <option value="Percy Jackson">Percy Jackson</option>
+          <option value="The book of Bill">The book of Bill 4</option>
         </select>
       </label>
       <button type="submit">Check Book Answer</button>
@@ -61,7 +63,7 @@ Select ONE Additional Feature to Add
         var $answer = $("#movie-answer");
         var answer = $answer.val();
 
-        if (answer === "movie1") {
+        if (answer === "Lisa Frankenstein") {
           $("#movie-result").text("YESSSS!");
         } else {
           $("#movie-result").text("Try Again!");
@@ -75,7 +77,7 @@ Select ONE Additional Feature to Add
         var $answer = $("#book-answer");
         var answer = $answer.val();
 
-        if (answer === "book1") {
+        if (answer === "none") {
           $("#book-result").text("YESSSS!");
         } else {
           $("#book-result").text("Try Again!");
@@ -83,29 +85,13 @@ Select ONE Additional Feature to Add
       });
     </script>
   </body>
-Animate() method
-  
-  
-  $("img").animate(
-  {
-  width: "310px",
-  marginLeft: "30px"
-  borderWidth: "20px",
-  },
-  2500
-  );
-  
-  $(h1").animate(
-  {
-  marginLeft: "20px",
-  fontSize: "6em"
-  
-  
-  SlideDown Method
+  Animate() method $("img").animate( { width: "310px", marginLeft: "30px"
+  borderWidth: "20px", }, 2500 ); $(h1").animate( { marginLeft: "20px",
+  fontSize: "6em" SlideDown Method
   <script>
-  $("#____-pic").slideDown(1000, function() {
-    $("____-h1").slideDown(3000);
-  });
+    $("#____-pic").slideDown(1000, function () {
+      $("____-h1").slideDown(3000);
+    });
   </script>
   <!--- Taken From Khan Academy HTML/JS: Making webpages interactive with jQuery-->
 </html>
