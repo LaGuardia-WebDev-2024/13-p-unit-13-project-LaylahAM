@@ -20,3 +20,35 @@ hr {
   height: 5px;
   background-color: black;
 }
+html {
+  background-color: white;
+  padding-left: 20px;
+}
+
+img {
+  border-radius: 30px;
+}
+
+h1 {
+  font-family: "Poetsen One", sans-serif;
+}
+
+.declaration {
+  font: italic 20px fantasy;
+}
+body {
+  text-align: center;
+  margin: auto;
+  font-family: "Poetsen One", serif;
+  background-color: black;
+  text-align: center;
+  color: rgb(188, 890, 200);
+  margin: auto;
+}
+@font-face {
+  font-family: sans;
+  src: url(https://cdn.glitch.global/354feede-3999-4cc8-a0f2-35752645a26f/JUST%20Sans%20Outline%20ExBold.woff?v=1747146038574);
+}
+body {
+  font-family: sans;
+}
